@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Q&A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrixRain"></canvas>
+    <div class="container">
+        <button id="pickButton" class="animated-button">Pick a Card</button>
+        <div id="loadingContainer" class="hidden">
+            <div class="dice">
+                <div class="face front">
+                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
+                </div>
+                <div class="face back">
+                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
+                </div>
+                <div class="face right">
+                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
+                </div>
+                <div class="face left">
+                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
+                </div>
+                <div class="face top">
+                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
+                </div>
+                <div class="face bottom">
+                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
+                </div>
+            </div>
+            <p class="loading-text">Shuffling the cards...</p>
+        </div>
+        <div id="questionContainer" class="hidden">
+            <div class="question-box">
+                <div class="card-face card-front">
+                    <img src="gdd.png" alt="GD&D Logo" class="card-logo">
+                    <p id="questionText">Your question will appear here...</p>
+                    <button id="showAnswerButton" class="animated-button">Reveal Answer</button>
+                </div>
+                <div class="card-face card-back">
+                    <p id="answerText">The answer will be revealed here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
