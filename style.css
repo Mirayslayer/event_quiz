@@ -306,6 +306,23 @@ body.rtl .email-signup {
         gap: 2rem;
     }
     
+    .language-switcher {
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .lang-btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        min-width: auto;
+        border-radius: 20px;
+    }
+    
+    /* Hide text on mobile, show only flag */
+    .lang-btn #currentLang {
+        font-size: 1.5rem;
+    }
+    
     .logo {
         font-size: 3rem;
     }

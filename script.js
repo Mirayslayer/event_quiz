@@ -143,11 +143,14 @@ function switchLanguage() {
     const body = document.body;
     const langBtn = document.getElementById('currentLang');
     
+    // Check if mobile
+    const isMobile = window.innerWidth <= 768;
+    
     if (currentLang === 'en') {
         // Switch to Arabic
         currentLang = 'ar';
         body.classList.add('rtl');
-        langBtn.textContent = '🇲🇦 العربية';
+        langBtn.textContent = isMobile ? '🇲🇦' : '🇲🇦 العربية';
         
         // Update all text elements
         document.querySelectorAll('[data-ar]').forEach(element => {
@@ -162,7 +165,7 @@ function switchLanguage() {
         // Switch to English
         currentLang = 'en';
         body.classList.remove('rtl');
-        langBtn.textContent = '🇺🇸 English';
+        langBtn.textContent = isMobile ? '🇺🇸' : '🇺🇸 English';
         
         // Update all text elements
         document.querySelectorAll('[data-en]').forEach(element => {
@@ -185,6 +188,18 @@ function loadLanguagePreference() {
     switchLanguage();
 }
 
+// Update button text on window resize
+function updateButtonText() {
+    const langBtn = document.getElementById('currentLang');
+    const isMobile = window.innerWidth <= 768;
+    
+    if (currentLang === 'ar') {
+        langBtn.textContent = isMobile ? '🇲🇦' : '🇲🇦 العربية';
+    } else {
+        langBtn.textContent = isMobile ? '🇺🇸' : '🇺🇸 English';
+    }
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     startCountdown();
@@ -197,6 +212,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Load saved language preference
     loadLanguagePreference();
+    
+    // Update button text on window resize
+    window.addEventListener('resize', updateButtonText);
 });
 
 // Add CSS animations via JavaScript
