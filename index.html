@@ -3,49 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Q&A</title>
+    <title>Rasmix - Premium Stickers & Printing | Coming Soon</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas id="matrixRain"></canvas>
+    
     <div class="container">
-        <button id="pickButton" class="animated-button">Pick a Card</button>
-        <div id="loadingContainer" class="hidden">
-            <div class="dice">
-                <div class="face front">
-                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
-                </div>
-                <div class="face back">
-                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
-                </div>
-                <div class="face right">
-                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
-                </div>
-                <div class="face left">
-                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
-                </div>
-                <div class="face top">
-                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
-                </div>
-                <div class="face bottom">
-                    <img src="gdd.png" alt="GD&D Logo" class="cube-logo">
-                </div>
-            </div>
-            <p class="loading-text">Shuffling the cards...</p>
+        <div class="logo-section">
+            <h1 class="logo">RASMIX</h1>
+            <div class="tagline">Premium Stickers & Printing Solutions</div>
         </div>
-        <div id="questionContainer" class="hidden">
-            <div class="question-box">
-                <div class="card-face card-front">
-                    <img src="gdd.png" alt="GD&D Logo" class="card-logo">
-                    <p id="questionText">Your question will appear here...</p>
-                    <button id="showAnswerButton" class="animated-button">Reveal Answer</button>
-                </div>
-                <div class="card-face card-back">
-                    <p id="answerText">The answer will be revealed here...</p>
-                </div>
+        
+        <div class="coming-soon">
+            <h2>COMING SOON</h2>
+            <p class="description">
+                Get ready for the ultimate destination for custom stickers, decals, and premium printing services. 
+                From vinyl stickers to holographic designs, we're crafting something amazing for you.
+            </p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🏷️</div>
+                <h3>Custom Stickers</h3>
+                <p>Personalized designs for any occasion</p>
             </div>
+            <div class="feature-item">
+                <div class="feature-icon">✨</div>
+                <h3>Premium Materials</h3>
+                <p>Waterproof, fade-resistant quality</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <h3>Fast Delivery</h3>
+                <p>Quick turnaround times</p>
+            </div>
+        </div>
+        
+        <div class="notify-section">
+            <h3>Be the First to Know!</h3>
+            <div class="email-signup">
+                <input type="email" placeholder="Enter your email address" id="emailInput">
+                <button id="notifyBtn">Get Notified</button>
+            </div>
+            <p class="privacy-note">We'll notify you when we launch. No spam, promise!</p>
+        </div>
+        
+        <div class="countdown" id="countdown">
+            <div class="countdown-item">
+                <span class="count" id="days">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span class="count" id="hours">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span class="count" id="minutes">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span class="count" id="seconds">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" class="social-link">📧</a>
+            <a href="#" class="social-link">📱</a>
+            <a href="#" class="social-link">🌐</a>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
