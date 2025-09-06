@@ -5,67 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasmix - Premium Stickers & Printing | Coming Soon</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <div class="container">
+        <div class="language-switcher">
+            <button id="langBtn" class="lang-btn">
+                <span id="currentLang">🇺🇸 English</span>
+            </button>
+        </div>
+        
         <div class="logo-section">
             <h1 class="logo">RASMIX</h1>
-            <div class="tagline">Premium Stickers & Printing Solutions</div>
+            <div class="tagline" data-en="Premium Stickers & Printing Solutions" data-ar="حلول الملصقات والطباعة المتميزة">Premium Stickers & Printing Solutions</div>
         </div>
         
         <div class="coming-soon">
-            <h2>COMING SOON</h2>
-            <p class="description">
-                Get ready for the ultimate destination for custom stickers, decals, and premium printing services. 
-                From vinyl stickers to holographic designs, we're crafting something amazing for you.
+            <h2 data-en="COMING SOON" data-ar="قريباً">COMING SOON</h2>
+            <p class="description" data-en="Get ready for the ultimate destination for custom stickers, decals, and premium printing services. From vinyl stickers to holographic designs, we're crafting something amazing for you." data-ar="استعدوا للوجهة النهائية للملصقات المخصصة والديكالز وخدمات الطباعة المتميزة. من الملصقات الفينيل إلى التصاميم الهولوجرافية، نحن نصنع شيئاً مذهلاً لكم.">
+                Get ready for the ultimate destination for custom stickers, decals, and premium printing services. From vinyl stickers to holographic designs, we're crafting something amazing for you.
             </p>
         </div>
         
         <div class="features">
             <div class="feature-item">
                 <div class="feature-icon">🏷️</div>
-                <h3>Custom Stickers</h3>
-                <p>Personalized designs for any occasion</p>
+                <h3 data-en="Custom Stickers" data-ar="ملصقات مخصصة">Custom Stickers</h3>
+                <p data-en="Personalized designs for any occasion" data-ar="تصاميم شخصية لكل مناسبة">Personalized designs for any occasion</p>
             </div>
             <div class="feature-item">
                 <div class="feature-icon">✨</div>
-                <h3>Premium Materials</h3>
-                <p>Waterproof, fade-resistant quality</p>
+                <h3 data-en="Premium Materials" data-ar="مواد عالية الجودة">Premium Materials</h3>
+                <p data-en="Waterproof, fade-resistant quality" data-ar="مقاومة للماء وعدم البهتان">Waterproof, fade-resistant quality</p>
             </div>
             <div class="feature-item">
                 <div class="feature-icon">🚀</div>
-                <h3>Fast Delivery</h3>
-                <p>Quick turnaround times</p>
+                <h3 data-en="Fast Delivery" data-ar="توصيل سريع">Fast Delivery</h3>
+                <p data-en="Quick turnaround times" data-ar="أوقات تسليم قصيرة">Quick turnaround times</p>
             </div>
         </div>
         
         <div class="notify-section">
-            <h3>Be the First to Know!</h3>
+            <h3 data-en="Be the First to Know!" data-ar="كن أول من يعلم!">Be the First to Know!</h3>
             <div class="email-signup">
-                <input type="email" placeholder="Enter your email address" id="emailInput">
-                <button id="notifyBtn">Get Notified</button>
+                <input type="email" id="emailInput" data-placeholder-en="Enter your email address" data-placeholder-ar="أدخل عنوان بريدك الإلكتروني" placeholder="Enter your email address">
+                <button id="notifyBtn" data-en="Get Notified" data-ar="احصل على الإشعار">Get Notified</button>
             </div>
-            <p class="privacy-note">We'll notify you when we launch. No spam, promise!</p>
+            <p class="privacy-note" data-en="We'll notify you when we launch. No spam, promise!" data-ar="سنخبرك عند الإطلاق. لا رسائل مزعجة، وعد!">We'll notify you when we launch. No spam, promise!</p>
         </div>
         
         <div class="countdown" id="countdown">
             <div class="countdown-item">
                 <span class="count" id="days">00</span>
-                <span class="label">Days</span>
+                <span class="label" data-en="Days" data-ar="أيام">Days</span>
             </div>
             <div class="countdown-item">
                 <span class="count" id="hours">00</span>
-                <span class="label">Hours</span>
+                <span class="label" data-en="Hours" data-ar="ساعات">Hours</span>
             </div>
             <div class="countdown-item">
                 <span class="count" id="minutes">00</span>
-                <span class="label">Minutes</span>
+                <span class="label" data-en="Minutes" data-ar="دقائق">Minutes</span>
             </div>
             <div class="countdown-item">
                 <span class="count" id="seconds">00</span>
-                <span class="label">Seconds</span>
+                <span class="label" data-en="Seconds" data-ar="ثواني">Seconds</span>
             </div>
         </div>
         

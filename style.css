@@ -13,6 +13,10 @@ body {
     position: relative;
 }
 
+body.rtl {
+    font-family: 'Amiri', 'Roboto', sans-serif;
+}
+
 /* Simple Background */
 body::before {
     content: '';
@@ -40,6 +44,48 @@ body::before {
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 20, 147, 0.3);
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 20, 147, 0.2);
+    border-color: #FF1493;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.3);
+}
+
+/* RTL Support */
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .container {
+    text-align: center;
+}
+
+
+body.rtl .email-signup {
+    flex-direction: row-reverse;
 }
 
 /* Logo Section */
