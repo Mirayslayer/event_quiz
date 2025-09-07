@@ -49,3 +49,12 @@ body {
 .font-noto-arabic .text-2xl {
   line-height: 1.3;
 }
+
+/* Hide floating photos initially to prevent flash before animation */
+.floating-photo-1,
+.floating-photo-2,
+.floating-photo-3,
+.floating-photo-4 {
+  opacity: 0;
+  transform: scale(0.8);
+}
