@@ -311,29 +311,29 @@ export default function Home() {
                 <h2 className="text-2xl font-medium text-black mb-2">{t.hero.comingSoon}</h2>
                 <p className="text-gray-600 mb-6 text-sm">{t.hero.launchText}</p>
                 
-                <div id="countdown" className="grid grid-cols-4 gap-3 text-center">
+                <div id="countdown" className="grid grid-cols-4 gap-2 sm:gap-3 text-center">
                   <div>
-                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-3 shadow-sm">
-                      <div className="text-2xl font-medium text-black" id="days">--</div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide">{t.hero.days}</div>
+                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-2 sm:p-3 shadow-sm min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                      <div className="text-lg sm:text-2xl font-medium text-black" id="days">--</div>
+                      <div className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wide leading-tight">{t.hero.days}</div>
                     </div>
                   </div>
                   <div>
-                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-3 shadow-sm">
-                      <div className="text-2xl font-medium text-black" id="hours">--</div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide">{t.hero.hours}</div>
+                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-2 sm:p-3 shadow-sm min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                      <div className="text-lg sm:text-2xl font-medium text-black" id="hours">--</div>
+                      <div className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wide leading-tight">{t.hero.hours}</div>
                     </div>
                   </div>
                   <div>
-                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-3 shadow-sm">
-                      <div className="text-2xl font-medium text-black" id="minutes">--</div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide">{t.hero.minutes}</div>
+                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-2 sm:p-3 shadow-sm min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                      <div className="text-lg sm:text-2xl font-medium text-black" id="minutes">--</div>
+                      <div className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wide leading-tight">{t.hero.minutes}</div>
                     </div>
                   </div>
                   <div>
-                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-3 shadow-sm">
-                      <div className="text-2xl font-medium text-black" id="seconds">--</div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide">{t.hero.seconds}</div>
+                    <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-sm p-2 sm:p-3 shadow-sm min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                      <div className="text-lg sm:text-2xl font-medium text-black" id="seconds">--</div>
+                      <div className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wide leading-tight">{t.hero.seconds}</div>
                     </div>
                   </div>
                 </div>
