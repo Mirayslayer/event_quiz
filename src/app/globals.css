@@ -10,7 +10,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-noto-arabic: var(--font-noto-arabic);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +27,9 @@ body {
 
 /* Arabic text styling */
 .font-noto-arabic {
-  font-family: var(--font-noto-arabic), Arial, Helvetica, sans-serif;
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Only make body text slightly larger, keep headings at original Tailwind sizes */
